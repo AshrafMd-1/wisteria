@@ -9,14 +9,15 @@ micros:
       - npm install
     include:
       - controllers/
-      - downloads/
+      - downloads
+      - downloads/pdf
+      - downloads/pdf/
       - node_modules
       - public/
-      - views
+      - views/
       - codes.json
       - index.js
-      - server.js
-    run: node index
+    run: node index.js
     dev: node index
     public_routes:
       - "*"

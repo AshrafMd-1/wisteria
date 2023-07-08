@@ -78,7 +78,7 @@ router.get('/bulk/pdf/:filename', async (req, res) => {
         let [roll, sem, sub, week] = filename.split('_');
         week = week[0]
         const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${sem}/${sub}/${roll}_week${week}.pdf`;
-        const downloadPath = path.resolve(__dirname, '..', 'downloads', 'pdf', `${roll}_${week}_${new Date().getTime()}.pdf`);
+        const downloadPath = path.resolve(__dirname, '..', 'assests', 'pdf', `${roll}_${week}_${new Date().getTime()}.pdf`);
         await getFile(fileUrl, downloadPath);
         const fileStreams = fs.createReadStream(downloadPath);
 
@@ -89,7 +89,7 @@ router.get('/bulk/pdf/:filename', async (req, res) => {
         });
 
         fileStreams.pipe(res);
-        const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'downloads', 'pdf');
+        const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'assests', 'pdf');
         const MAX_PDF_FILES = 30;
         const pdfFiles = await readdirAsync(PDF_DOWNLOADS_DIR);
         if (pdfFiles.length > MAX_PDF_FILES) {

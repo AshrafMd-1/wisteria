@@ -1,4 +1,4 @@
-const codes = require('../codes.json');
+const codes = require('../assests/json/codes.json')
 
 const checkRoll = (req, res, next) => {
     const {roll} = req.body;

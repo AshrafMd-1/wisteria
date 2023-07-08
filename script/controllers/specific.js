@@ -20,7 +20,7 @@ router.post('/specific', checkRoll, checkSem, checkSub, checkWeek, async (req, r
         const semDigits = romanToDigits(sem.split(' ')[0]);
         const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${semDigits}/${sub}/${roll}_week${week}.pdf`;
 
-        const downloadPath = path.resolve(__dirname, '..', 'downloads', 'pdf', `${roll}_${week}_${new Date().getTime()}.pdf`);
+        const downloadPath = path.resolve(__dirname, '..', 'assests', 'pdf', `${roll}_${week}_${new Date().getTime()}.pdf`);
         const fileStream = fs.createWriteStream(downloadPath);
 
         await new Promise((resolve, reject) => {

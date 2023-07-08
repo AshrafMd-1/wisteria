@@ -8,8 +8,9 @@ const {promisify} = require('util');
 const unlinkAsync = promisify(fs.unlink);
 const readdirAsync = promisify(fs.readdir);
 
-const codes = require('../codes.json');
-const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'downloads', 'pdf');
+const codes = require('../assests/json/codes.json')
+
+const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'assests', 'pdf');
 const MAX_PDF_FILES = 30;
 
 async function deleteFile(filePath, req) {
