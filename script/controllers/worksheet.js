@@ -2,16 +2,34 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const fs = require('fs');
-const {checkRoll, checkSem} = require('./middleware');
-const {promisify} = require('util');
+const { checkRoll, checkSem } = require('./middleware');
+const { promisify } = require('util');
 
 const unlinkAsync = promisify(fs.unlink);
 const readdirAsync = promisify(fs.readdir);
 
 const codes = require('../assests/json/codes.json')
 
-const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'assests', 'pdf');
+const PDF_DOWNLOADS_DIR = path.resolve(__dirname, '..', 'assets', 'pdf');
 const MAX_PDF_FILES = 30;
+
+function createFolderIfNotExists(folderPath, callback) {
+    fs.access(folderPath, fs.constants.F_OK, (err) => {
+        if (err) {
+            // Folder doesn't exist, create it
+            fs.mkdir(folderPath, { recursive: true }, (mkdirErr) => {
+                if (mkdirErr) {
+                    callback(mkdirErr);
+                } else {
+                    callback(null, folderPath);
+                }
+            });
+        } else {
+            // Folder already exists
+            callback(null, folderPath);
+        }
+    });
+}
 
 async function deleteFile(filePath, req) {
     try {
@@ -23,12 +41,12 @@ async function deleteFile(filePath, req) {
 }
 
 router.post('/semester', checkRoll, (req, res) => {
-    const {roll} = req.body;
+    const { roll } = req.body;
     res.json(Object.keys(codes[roll.slice(6, 8)]));
 });
 
 router.post('/subject', checkRoll, checkSem, (req, res) => {
-    const {roll, sem} = req.body;
+    const { roll, sem } = req.body;
     const sub = {
         code: Object.keys(codes[roll.slice(6, 8)][sem]['Practical']),
         name: Object.values(codes[roll.slice(6, 8)][sem]['Practical']),
@@ -37,9 +55,15 @@ router.post('/subject', checkRoll, checkSem, (req, res) => {
 });
 
 router.get('/pdf/:filename', async (req, res) => {
-    const {filename} = req.params;
+    const { filename } = req.params;
     const filePath = path.join(PDF_DOWNLOADS_DIR, filename);
-
+    createFolderIfNotExists(PDF_DOWNLOADS_DIR, (err, createdFolderPath) => {
+        if (err) {
+            console.error('Error creating folder:', err);
+        } else {
+            console.log('Folder created or already exists:', createdFolderPath);
+        }
+    });
     // Step 1: Set the appropriate headers
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `inline; filename=${filename}`);
