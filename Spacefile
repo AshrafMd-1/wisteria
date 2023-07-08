@@ -8,14 +8,11 @@ micros:
     commands:
       - npm install
     include:
+      - assests/
       - controllers/
-      - downloads
-      - downloads/pdf
-      - downloads/pdf/
-      - node_modules
+      - node_modules/
       - public/
       - views/
-      - codes.json
       - index.js
     run: node index.js
     dev: node index
