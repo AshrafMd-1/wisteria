@@ -1,0 +1,22 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: Wisteria
+    src: script
+    engine: nodejs16
+    primary: true
+    commands:
+      - npm install
+    include:
+      - controllers/
+      - downloads/
+      - node_modules
+      - public/
+      - views
+      - codes.json
+      - index.js
+      - server.js
+    run: node index
+    dev: node index
+    public_routes:
+      - "*"

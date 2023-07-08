@@ -1,0 +1,1132 @@
+{
+  "05": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AITC01": "Discrete Mathematical Structures",
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC08": "Data Structures",
+        "AITC02": "Programming with Objects",
+        "AECC08": "Analog and Digital Electronics",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "AITC03": "Programming with Objects Laboratory",
+        "ACSC11": "Advanced Python Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AITC04": "Theory of Computation",
+        "ACSC12": "Operating Systems",
+        "AITC05": "Database Management Systems",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "ACSC15": "Design and Analysis of Algorithms Laboratory",
+        "ACSC16": "Linux Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC14": "Indian Constitution"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AITCO6": "Computer Networks",
+        "ACSC40": "Compiler Design",
+        "ACSC19": "Object Oriented Software Engineering",
+        "AITC09": "Web Application Development",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "ACSC21": "Object Oriented Software Design Laboratory",
+        "AITC10": "Web Application Development Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACIC01": "Data Mining and Knowledge Discovery",
+        "ACIC02": "Software Quality Assurance and Testing",
+        "ACIC03": "Network and Web Security",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "ACIC08": "Data Mining and Knowledge Discovery Laboratory",
+        "ACIC09": "Software Testing Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC28": "Go Programming"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACSC30": "Cloud Application Development",
+        "ACSC31": "Big Data and Analytics"
+      },
+      "Practical": {
+        "ACSC33": "Cloud Application Development Laboratory",
+        "ACSC34": "Big Data and Analytics Laboratory",
+        "ACSC35": "Project Work ( Phase \u2013 1)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "ACSC39": "Project Work (Phase-2)"
+      }
+    }
+  },
+  "66": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC08": "Data Structures",
+        "ACSC12": "Operating Systems",
+        "ACAC01": "Probabilistic Modeling and Reasoning",
+        "AECC08": "Analog and Digital Electronics",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "AITC03": "Programming with Objects Laboratory",
+        "ACAC02": "R for Probabilistic Modeling and Reasoning Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AITC04": "Theory of Computation",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AITC05": "Database Management Systems",
+        "AITC09": "Web Application Development",
+        "ACAC03": "Foundations of Machine Learning",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "AITC10": "Web Application Development Laboratory",
+        "ACAC04": "Foundations of Machine Learning Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC14": "Indian Constitution"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AITC06": "Computer Networks",
+        "ACAC05": "Image and Speech Processing",
+        "ACSC40": "Compiler Design",
+        "ACAC06": "Artificial Intelligence and Expert Systems",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "ACAC11": "Image and Speech Processing Laboratory",
+        "ACAC12": "Programming in Logic Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACSC19": "Object Oriented Software Engineering",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACAC13": "Natural Language Processing",
+        "ACAC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "ACAC14": "Object Oriented Analysis and Design Laboratory",
+        "ACAC15": "Natural Language Processing Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC28": "Go Programming"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACAC16": "Deep Neural Networks",
+        "ACDC11": "Virtual Reality"
+      },
+      "Practical": {
+        "ACAC25": "Deep Neural Networks Laboratory",
+        "ACDC16": "Virtual Reality Laboratory",
+        "ACAC26": "Project Work (Phase \u2013 1)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "ACAC32": "Project Work (Phase-2)"
+      }
+    }
+  },
+  "67": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC08": "Data Structures",
+        "ACSC12": "Operating Systems",
+        "ACDC01": "Principles of Data Science",
+        "AITC02": "Programming with Objects",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "ACDC02": "Data Science Laboratory",
+        "AITC03": "Programming with Objects Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "ACDC03": "Data Management and Representation",
+        "AITC05": "Database Management Systems",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AITC09": "Web Application Development",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "AITC10": "Web Application Development Laboratory",
+        "ACSC16": "Linux Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC14": "Indian Constitution"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AITC04": "Theory of Computation",
+        "AITC06": "Computer Networks",
+        "ACDC04": "Software Engineering",
+        "ACDC05": "Data Wrangling with Python",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "ACSC21": "Object Oriented Software Design Laboratory",
+        "ACDC09": "Data Wrangling and Visualization Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACSC40": "Compiler Design",
+        "ACAC13": "Natural Language Processing",
+        "ACAC03": "Foundations of Machine Learning",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "ACAC04": "Foundations of Machine Learning Laboratory",
+        "ACAC15": "Natural Language Processing Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC28": "Go Programming"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACSC31": "Big Data and Analytics",
+        "ACDC24": "Mathematical Logic in Artificial Intelligence"
+      },
+      "Practical": {
+        "ACSC34": "Big Data and Analytics Laboratory",
+        "ACDC25": "Artificial Intelligence Laboratory",
+        "ACDC17": "Project Work (Phase \u2013 1)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "ACDC23": "Project Work (Phase-2)"
+      }
+    }
+  },
+  "62": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "ACSC08": "Data Structures",
+        "ACCC01": "Mathematical Foundation for Cyber Security",
+        "AECC08": "Analog and Digital Electronics",
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC12": "Operating Systems",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "AITC03": "Programming with Objects Laboratory",
+        "ACSC16": "Linux Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "ACCC02": "Foundations of Cyber Security",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AITC05": "Database Management Systems",
+        "AITC06": "Computer Networks",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "ACSC15": "Design and Analysis of Algorithms Laboratory",
+        "AITC12": "Computer Networks Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC14": "Indian Constitution"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AITC09": "Web Application Development",
+        "ACSC19": "Object Oriented Software Engineering",
+        "AITC04": "Theory of Computation",
+        "ACCC03": "Network Security",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "AITC10": "Web Application Development Laboratory",
+        "ACCC04": "Network Security Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACCC09": "Penetration Testing and Cyber Operations",
+        "ACIC01": "Data Mining and Knowledge Discovery",
+        "ACSC40": "Compiler Design",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "ACCC10": "Penetration Testing and Cyber Operations Laboratory",
+        "ACIC08": "Data Mining and Knowledge Discovery Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC28": "Go Programming"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACCC11": "Digital Forensics",
+        "ACCC12": "Cloud Security"
+      },
+      "Practical": {
+        "ACCC17": "Digital Forensics Laboratory",
+        "ACCC18": "Cloud Security Laboratory",
+        "ACCC19": "Project Work (Phase \u2013 1)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "ACSC24": "Project Work (Phase-2)"
+      }
+    }
+  },
+  "12": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AITC01": "Discrete Mathematical Structures",
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC08": "Data Structures",
+        "AITC02": "Programming with Objects",
+        "AECC08": "Analog and Digital Electronics",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "AITC03": "Programming with Objects Laboratory",
+        "ACSC11": "Advanced Python Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AITC04": "Theory of Computation",
+        "ACSC12": "Operating Systems",
+        "AITC05": "Database Management Systems",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AITC06": "Computer Networks",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "ACSC15": "Design and Analysis of Algorithms Laboratory",
+        "AITC08": "Linux Internals Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC14": "Indian Constitution"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "ACSC40": "Compiler Design",
+        "AITC09": "Web Application Development",
+        "AITC11": "Cryptography and Network Security",
+        "ACSC19": "Object Oriented Software Engineering",
+        "ACSC20": "Experiential Engineering Education (ExEEd) \u2013 Project Based Learning"
+      },
+      "Practical": {
+        "ACSC21": "Object Oriented Software Design Laboratory",
+        "AITC10": "Web Application Development Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "AITC17": "Data Warehousing and Data Mining",
+        "AITC18": "Software Testing Methodologies",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "AITC22": "Data Warehousing and Data Mining Laboratory",
+        "AITC23": "Software Testing Methodologies Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC28": "Go Programming"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "AITC24": "Big Data and Business Analytics",
+        "AITC25": "Cloud Computing"
+      },
+      "Practical": {
+        "AITC29": "Big Data and Business Analytics Laboratory",
+        "AITC30": "Cloud Computing Laboratory",
+        "AITC31": "Project Work (Phase \u2013 I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "AITC32": "Project Work (Phase \u2013 II)"
+      }
+    }
+  },
+  "21": {
+    "I Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC03": "Engineering Physics",
+        "ACSC01": "Python Programming"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC02": "Python Programming Laboratory"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC06": "Chemistry",
+        "AHSC07": "Mathematical Transform Techniques",
+        "AMEC01": "Engineering Mechanics",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AMEC02": "Manufacturing Practice",
+        "AMEC03": "Computer Aided Engineering Drawing",
+        "ACSC03": "Programming for Problem Solving Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AHSC08": "Probability and Statistics",
+        "AAEC01": "Mechanics of Solids",
+        "AAEC02": "Engineering Thermodynamics",
+        "AAEC03": "Fluid Dynamics",
+        "ACSC08": "Data Structures",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "AAEC04": "Fluid Dynamics Laboratory",
+        "AAEC05": "Mechanics of Solids Laboratory",
+        "ACSC10": "Data Structures Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AAEC06": "Aerospace Structures",
+        "AAEC07": "Aircraft Propulsion",
+        "AAEC08": "Aerodynamics",
+        "AAEC09": "Flight Mechanics",
+        "AAEC10": "Aircraft Production Technology",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AAEC11": "Aerospace Structures Laboratory",
+        "AAEC12": "Aerodynamics and Propulsion Laboratory",
+        "AAEC13": "Aircraft Production Technology Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC18": "Fundamentals of Database Systems"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AHSC13": "Business Economics and Financial Analysis",
+        "AAEC14": "Aerospace Propulsion",
+        "AAEC15": "Analysis of Aircraft Structures",
+        "AAEC16": "High Speed Aerodynamics",
+        "ACSC20": "ExEEd - Project Based Learning"
+      },
+      "Practical": {
+        "AAEC21": "Computer Aided Aircraft Production Drawing Laboratory",
+        "AAEC22": "Computational Structure Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC23": "Object Oriented Programming Development and Languages"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "AAEC23": "Finite Element Analysis",
+        "AAEC24": "Aircraft Stability and Control",
+        "AAEC25": "Computational Aerodynamics",
+        "ACSC27": "ExEEd - Research Based Learning"
+      },
+      "Practical": {
+        "AAEC32": "Computational Aerodynamics Laboratory",
+        "AAEC33": "Computer Aided Manufacturing (CAM) Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC29": "Design of Algorithms"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "AAEC34": "Flight Vehicle Design",
+        "AAEC35": "Aerospace Structural Dynamics"
+      },
+      "Practical": {
+        "AAEC44": "Flight Vehicle Design Laboratory",
+        "AAEC45": "Aerospace Structural Dynamics Laboratory",
+        "AAEC46": "Project Work (Phase - I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "AAEC55": "Project Work (Phase - II)"
+      }
+    }
+  },
+  "04": {
+    "I Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC03": "Engineering Physics",
+        "ACSC01": "Python Programming"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC02": "Python Programming Laboratory"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC06": "Chemistry",
+        "AHSC07": "Mathematical Transform Techniques",
+        "AEEC02": "Electrical Circuits",
+        "ACSC04": "Programming for Problem Solving using C",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC03": "Electrical Circuits Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AECC01": "Electronic Devices and Circuits",
+        "AECC02": "Signals and Systems",
+        "AECC03": "Digital System Design",
+        "AECC04": "Probability Theory and Stochastic Processes",
+        "ACSC08": "Data Structures",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "AECC05": "Electronic Devices and Circuits Laboratory",
+        "AECC06": "Digital System Design Laboratory",
+        "ACSC10": "Data Structures Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AHSC12": "Complex Analysis and Special Functions",
+        "AECC09": "Analog and Pulse Circuits",
+        "AECC10": "Analog and Digital Communications",
+        "AECC11": "Electromagnetic Waves and Transmission Lines",
+        "AECC12": "IC Applications",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AECC13": "Analog and Pulse Circuits Laboratory",
+        "AECC14": "Analog and Digital Communications Laboratory",
+        "AECC15": "IC Applications Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC18": "Fundamentals of Database Systems"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AECC18": "Antennas and Wave Propagation",
+        "AECC19": "Microprocessors and Microcontrollers",
+        "AECC20": "Electronic Measurements and Instrumentation",
+        "AECC21": "Control Systems",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "AECC30": "Virtual Instrumentation Laboratory",
+        "AECC31": "Microprocessors and Microcontrollers Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC23": "Object Oriented Programming Development and Languages"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "AECC32": "Microwave and Radar Engineering",
+        "AECC33": "Digital Signal Processing",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "AECC41": "Antennas and Microwave Engineering Laboratory",
+        "AECC42": "Digital Signal Processing Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC29": "Design of Algorithms"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "AECC43": "Embedded System Design",
+        "AECC44": "VLSI Design"
+      },
+      "Practical": {
+        "AECC53": "Embedded System Design Laboratory",
+        "AECC54": "VLSI Design Laboratory",
+        "AECC55": "Project Work (Phase - I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "AECC64": "Project Work (Phase - II)"
+      }
+    }
+  },
+  "02": {
+    "I Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC03": "Engineering Physics",
+        "ACSC01": "Python Programming"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC02": "Python Programming Laboratory"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC06": "Chemistry",
+        "AHSC07": "Mathematical Transform Techniques",
+        "AEEC02": "Electrical Circuits",
+        "ACSC04": "Programming for Problem Solving using C",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AEEC03": "Electrical Circuits Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AEEC05": "Network Analysis",
+        "AEEC06": "Electromagnetic Fields",
+        "AECC07": "Analog Electronics",
+        "AEEC07": "DC Machines and Transformers",
+        "ACSC08": "Data Structures",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "AEEC08": "Network Analysis and Scientific Computing Laboratory",
+        "AEEC09": "DC Machines Laboratory",
+        "ACSC10": "Data Structures Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AHSC11": "Complex Analysis and Probability Distributions",
+        "AEEC10": "Electrical Power Generation Systems",
+        "AEEC11": "AC Machines",
+        "AEEC12": "Control Systems",
+        "AECC16": "Digital Electronics",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AEEC13": "AC Machines Laboratory",
+        "AEEC14": "Control Systems Laboratory",
+        "AECC17": "Analog and Digital Electronics Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC18": "Fundamentals of Database Systems"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AHSC13": "Business Economics and Financial Analysis",
+        "AEEC15": "Electrical Power Transmission Systems",
+        "AEEC16": "Power Electronics",
+        "AECC19": "Microprocessors and Microcontrollers",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "AEEC21": "Power Electronics Laboratory",
+        "AECC31": "Microprocessors and Microcontrollers Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC23": "Object Oriented Programming Development and Languages"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "AEEC22": "Power System Analysis",
+        "AEEC23": "Electric Drives and Static Control",
+        "AEEC24": "Electrical Measurements and Instrumentation",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "AEEC32": "PLC and Industrial Automation Laboratory",
+        "AEEC33": "Electrical Measurements and Instrumentation Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC29": "Design of Algorithms"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "AEEC34": "Power System Protection",
+        "AEEC35": "Power System Operation and Control"
+      },
+      "Practical": {
+        "AEEC44": "Electrical Power Systems Laboratory",
+        "AEEC45": "Power System Simulation Laboratory",
+        "AEEC46": "Project Work (Phase - I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "AEEC55": "Project Work (Phase - II)"
+      }
+    }
+  },
+  "03": {
+    "I Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC03": "Engineering Physics",
+        "ACSC01": "Python Programming"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC02": "Python Programming Laboratory"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC06": "Chemistry",
+        "AHSC07": "Mathematical Transform Techniques",
+        "AMEC01": "Engineering Mechanics",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AMEC02": "Manufacturing Practice",
+        "AMEC03": "Computer Aided Engineering Drawing",
+        "ACSC03": "Programming for Problem Solving Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AHSC08": "Probability and Statistics",
+        "AMEC05": "Solid Mechanics",
+        "AMEC06": "Thermodynamics",
+        "AMEC07": "Materials Engineering",
+        "ACSC08": "Data Structures",
+        "ACSC09": "Experiential Engineering Education (ExEEd) \u2013 Prototype / Design Building"
+      },
+      "Practical": {
+        "AMEC08": "Machine Drawing through CAD Laboratory",
+        "AMEC09": "Materials and Solid Mechanics Laboratory",
+        "ACSC10": "Data Structures Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AMEC10": "Kinematics of Machinery",
+        "AMEC11": "Manufacturing Processes",
+        "AMEC12": "Fluid Mechanics and Hydraulic Machines",
+        "AMEC13": "Applied Thermodynamics",
+        "AMEC14": "Design of Machine Elements",
+        "ACSC14": "Experiential Engineering Education (ExEEd) \u2013 Fabrication / Model Development"
+      },
+      "Practical": {
+        "AMEC15": "Manufacturing Processes Laboratory",
+        "AMEC16": "Fluid Mechanics and Hydraulic Machines Laboratory",
+        "AMEC17": "Applied Thermodynamics Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC18": "Fundamentals of Database Systems"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "AMEC18": "Dynamics of Machinery",
+        "AMEC19": "Machine Tools and Metrology",
+        "AMEC20": "Thermal Engineering",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC20": "Experiential Engineering Education (ExEEd) \u2013 Project Based Learning"
+      },
+      "Practical": {
+        "AMEC25": "Machine Tools and Metrology Laboratory",
+        "AMEC26": "Theory of Machines Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC23": "Object Oriented Programming Development and Languages"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "AMEC27": "Finite Element Methods",
+        "AMEC28": "Machine Design",
+        "AMEC29": "Heat Transfer",
+        "ACSC27": "Experiential Engineering Education (ExEEd) \u2013 Research Based Learning"
+      },
+      "Practical": {
+        "AMEC36": "Heat Transfer Laboratory",
+        "AMEC37": "Thermo-Fluid Modeling and Simulation Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC29": "Design of Algorithms"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "AMEC38": "CAD/CAM",
+        "AMEC39": "Instrumentation and Control Systems"
+      },
+      "Practical": {
+        "AMEC48": "CAD/CAM Laboratory",
+        "AMEC49": "Instrumentation, Control Systems & Production Drawing Practice Laboratory",
+        "AMEC50": "Project work (Phase \u2013 I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "AMEC59": "Project Work (Phase \u2013 II)"
+      }
+    }
+  },
+  "01": {
+    "I Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC03": "Engineering Physics",
+        "ACSC01": "Python Programming"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC02": "Python Programming Laboratory"
+      }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC06": "Chemistry",
+        "AHSC07": "Mathematical Transform Techniques",
+        "AMEC01": "Engineering Mechanics",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
+      "Practical": {
+        "AMEC02": "Manufacturing Practice",
+        "AMEC03": "Computer Aided Engineering Drawing",
+        "ACSC03": "Programming for Problem Solving Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "ACEC01": "Surveying and Geomatics",
+        "ACEC02": "Strength of Materials",
+        "ACEC03": "Fluid Mechanics",
+        "ACEC04": "Engineering Geology",
+        "ACSC08": "Data Structures",
+        "ACSC09": "Experiential Engineering Education (ExEEd) \u2013 Prototype / Design Building"
+      },
+      "Practical": {
+        "ACEC05": "Surveying and Geomatics Laboratory",
+        "ACEC06": "Engineering Geology Laboratory",
+        "ACSC10": "Data Structures Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "ACEC07": "Theory of Structures",
+        "AHSC08": "Probability and Statistics",
+        "ACEC08": "Hydraulics and Hydraulic Machinery",
+        "ACEC09": "Building Materials \u2013 Planning and Construction",
+        "ACEC10": "Concrete Technology",
+        "ACSC14": "Experiential Engineering Education (ExEEd) \u2013 Fabrication / Model Development"
+      },
+      "Practical": {
+        "ACEC11": "Concrete Technology Laboratory",
+        "ACEC12": "Hydraulics and Hydraulic Machinery Laboratory",
+        "ACEC13": "Strength of Materials Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC18": "Fundamentals of Database Systems"
+      }
+    },
+    "V Semester": {
+      "Theory": {
+        "ACEC14": "Analysis of Structures",
+        "ACEC15": "Hydrology and Water Resources Engineering",
+        "ACEC16": "Reinforced Concrete Structures Design and Drawing",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC20": "Experiential Engineering Education (ExEEd) \u2013 Project Based Learning"
+      },
+      "Practical": {
+        "ACEC21": "Advanced Surveying Laboratory",
+        "ACEC22": "Advanced Material Testing Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC23": "Object Oriented Programming Development and Languages"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACEC23": "Steel Structures Design and Drawing",
+        "ACEC24": "Geotechnical Engineering",
+        "ACEC25": "Transportation Engineering",
+        "ACSC27": "Experiential Engineering Education (ExEEd) \u2013 Research Based Learning"
+      },
+      "Practical": {
+        "ACEC32": "Geotechnical Engineering Laboratory",
+        "ACEC33": "Transportation Engineering Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC29": "Design of Algorithms"
+      }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACEC34": "Environmental Engineering",
+        "ACEC35": "Foundation Engineering"
+      },
+      "Practical": {
+        "ACEC44": "Advanced Structural Design Laboratory",
+        "ACEC45": "Project Planning Laboratory",
+        "ACEC46": "Project Work (Phase \u2013 I)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": {
+        "ACEC55": "Project Work(Phase \u2013 II)"
+      }
+    }
+  }
+}

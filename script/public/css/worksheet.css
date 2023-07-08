@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kalam:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-attachment: fixed;
+}
+
+header {
+    margin: 10px 0 0 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    padding: 10px;
+}
+
+.info h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Caprasimo', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    color: darkviolet;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-family: 'kalam', cursive;
+    text-align: center;
+    font-weight: 800;
+    margin: 5px 0;
+    color: #000000;
+}
+
+form {
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.form-element {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+    color: indigo;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'kalam', cursive;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: darkviolet;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+button:disabled {
+    background-color: #383838;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+footer {
+    padding: 5px;
+    width: 70%;
+    font-size: 20px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.btn a {
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #8f39ea;
+    display: inline-block;
+    margin: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn a:hover {
+    background-color: #383838;
+    color: #ffffff;
+}
+
+span {
+    color: red;
+    font-size: 1.2rem;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+}
+
+.search {
+    border-top: 4px solid #91c3fa;
+    border-bottom: 4px solid #dec3fc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search label {
+    margin: 0
+}
+
+.search button {
+    border-radius: 5px;
+    padding: 2px 30px;
+    border: 2px solid #000000;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    margin: auto;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #000000;
+}
+
+.search button:disabled {
+    background-color: #383838;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.swal-title {
+    font-size: 25px;
+    font-family: 'Caprasimo', cursive;
+    letter-spacing: 2px;
+}
+
+.swal-text {
+    font-size: 20px;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+}
+
+.swal-button {
+    font-size: 20px;
+    font-family: 'kalam', cursive;
+    font-weight: 800;
+    background-color: darkviolet;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}

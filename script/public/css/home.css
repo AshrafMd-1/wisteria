@@ -1,0 +1,135 @@
+body {
+    font-size: 16px;
+    font-family: 'Kalam', cursive;
+    color: #39393A;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1, header h2, header p {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 48px;
+    font-family: 'Caprasimo', cursive;
+    letter-spacing: 5px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, darkblue, darkgreen, darkred, darkviolet, indigo);
+    background-size: 600% 100%;
+    animation: gradientAnimation 10s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: -9px;
+    font-weight: 500;
+}
+
+header p span {
+    font-weight: 900;
+    color: #553766;
+}
+
+header img {
+    width: 100px;
+
+}
+
+main {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+main p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.util-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.util-btn a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.util-btn a:hover {
+    background-color: #4c4c4c;
+    color: white;
+    font-size: 24px;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2, footer p {
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #553766;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+footer a:hover {
+    color: #ff0000;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
