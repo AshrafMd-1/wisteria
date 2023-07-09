@@ -3,7 +3,7 @@ const router = express.Router();
 const axios = require('axios');
 const {checkRoll, checkSem} = require('./middleware');
 const codes = require('../assests/json/codes.json');
-const {romanToDigits} = require("./utility");
+const {worksheetRequests} = require('./deta');
 
 router.post('/semester', checkRoll, (req, res) => {
     const {roll} = req.body;
@@ -26,6 +26,13 @@ router.get('/pdf/:filename', async (req, res) => {
 
     const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${sem}/${sub}/${roll}_week${week}.pdf`;
     const pdfFileName = `${new Date().getTime()}.pdf`;
+
+    await worksheetRequests.put({
+        roll,
+        semester: sem,
+        subject: sub,
+        week
+    },`${new Date().getTime()}`);
 
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `inline; filename="${pdfFileName}"`);
