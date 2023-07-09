@@ -82,8 +82,6 @@ semEl.addEventListener('change', async () => {
         return;
     }
 
-    subEl.innerHTML = '<option value="0">Select Subject</option>';
-
     const subResponse = await fetchOptions('/subject', 'POST', {roll, sem});
     if (subResponse) {
         updateSubjectOptions(subResponse);

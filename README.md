@@ -1,11 +1,6 @@
-# worksheet
+# Wisteria
 
-a simple app to give IARE worksheets link based on the roll number given
+A website that gives link of uploaded lab worksheets bot in bulk and individually.
+- Website: https://wisteria-1-g0460449.deta.app/
 
-The API link is
-
-- Website: https://lab_upload-1-s8539933.deta.app/
-- Way to use: https://lab_upload-1-s8539933.deta.app/docs
-- Github: https://github.com/AshrafMd-1/lab-worksheet-uploaded-status-api
-
-
+## Only for IARE Students

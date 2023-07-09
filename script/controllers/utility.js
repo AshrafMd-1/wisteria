@@ -12,21 +12,14 @@ function romanToDigits(romanNumeral) {
     let result = 0;
 
     for (let i = 0; i < romanNumeral.length; i++) {
-        const currentSymbol = romanNumeral[i];
-        const currentValue = romanToDigitMap[currentSymbol];
+        const currentValue = romanToDigitMap[romanNumeral[i]];
+        const nextValue = romanToDigitMap[romanNumeral[i + 1]];
 
-        if (i + 1 < romanNumeral.length) {
-            const nextSymbol = romanNumeral[i + 1];
-            const nextValue = romanToDigitMap[nextSymbol];
-
-            if (currentValue >= nextValue) {
-                result += currentValue;
-            } else {
-                result += nextValue - currentValue;
-                i++;
-            }
-        } else {
+        if (currentValue >= nextValue || i + 1 === romanNumeral.length) {
             result += currentValue;
+        } else {
+            result += nextValue - currentValue;
+            i++;
         }
     }
 
@@ -55,7 +48,7 @@ const rollChecker = (from, to) => {
     const roll = [];
     let currentRoll = from;
 
-    while (currentRoll !== nextRoll(to) && roll.length <= 30) {
+    while (currentRoll !== nextRoll(to) && roll.length <= 80) {
         roll.push(currentRoll);
         currentRoll = nextRoll(currentRoll);
     }
@@ -63,8 +56,7 @@ const rollChecker = (from, to) => {
     return roll;
 };
 
-
 module.exports = {
     romanToDigits,
     rollChecker
-}
+};

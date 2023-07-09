@@ -9,6 +9,7 @@ $(document).ready(function () {
     const noEl = document.getElementById('no');
     const uploadEl = document.getElementById('upload');
     const percentEl = document.getElementById('percent');
+
     const clearAll = () => {
         semEl.innerHTML = '<option value="0">Not Available</option>';
         subEl.innerHTML = '<option value="0">Not Available</option>';
@@ -20,7 +21,7 @@ $(document).ready(function () {
             text: message,
             icon: "error",
             button: "Ok",
-        })
+        });
         clearAll();
     };
 
@@ -34,11 +35,10 @@ $(document).ready(function () {
                 body: JSON.stringify({
                     roll: fromEl.value
                 })
-            })
-                .then(res => res.json())
-                .catch(() => {
-                    showAlert('Invalid Roll Number')
-                });
+            }).then(res => res.json()).catch(() => {
+                showAlert('Invalid Roll Number');
+            });
+
             semEl.innerHTML = `<option value="0">Select Semester</option>` + semResponse.map(sem => `<option value="${sem}">${sem}</option>`).join('');
         } catch (error) {
             console.log(error);
@@ -64,11 +64,9 @@ $(document).ready(function () {
                     roll,
                     sem
                 })
-            })
-                .then(res => res.json())
-                .catch(() => {
-                    showAlert('Invalid Roll Number')
-                })
+            }).then(res => res.json()).catch(() => {
+                showAlert('Invalid Roll Number');
+            });
 
             const options = subResponse.code.map((code, index) => `<option value="${code}">${subResponse.name[index]}</option>`).join('');
             subEl.innerHTML = `<option value="0">Select Subject</option>${options}`;
@@ -124,19 +122,19 @@ $(document).ready(function () {
                     sub,
                     week
                 })
-            })
-                .then(res => res.json())
-                .catch(() => {
-                    showAlert('Invalid Roll Number')
-                });
+            }).then(res => res.json()).catch(() => {
+                showAlert('Invalid Roll Number');
+            });
+
             if (specificResponse && specificResponse.status === 200) {
-                specificResponse.data.forEach((item, index) => {
+                specificResponse.data.forEach((item) => {
                     if (item.url) {
                         item.url = `<a href="${item.url}" class="link" target="_blank">View</a>`;
                     } else {
                         item.url = `<a href="#" class="link disabled">N/A</a>`;
                     }
                 });
+
                 noEl.innerHTML = `<span class="key">Total Students:</span> <span class="value">${specificResponse.data.length}</span>`;
                 uploadEl.innerHTML = `<span class="key">Uploaded:</span> <span class="value">${specificResponse.data.filter(item => item.status === 'Uploaded').length}</span>`;
                 percentEl.innerHTML = `<span class="key">Percentage:</span> <span class="value">${Math.round((specificResponse.data.filter(item => item.status === 'Uploaded').length / specificResponse.data.length) * 100)}%</span>`;
@@ -145,7 +143,8 @@ $(document).ready(function () {
                 <th>Roll Number</th>
                 <th>Status</th>
                 <th>Link</th>
-                </tr>`
+                </tr>`;
+
                 $('#myTable').DataTable({
                     data: specificResponse.data,
                     columns: [
@@ -158,7 +157,6 @@ $(document).ready(function () {
                     searching: false,
                     "bDestroy": true
                 });
-
             }
 
         } catch (error) {
@@ -167,7 +165,6 @@ $(document).ready(function () {
 
         submitBtn.innerText = 'Submit';
         submitBtn.disabled = false;
-
     };
 
     applyBtn.addEventListener('click', async () => {
@@ -194,3 +191,19 @@ $(document).ready(function () {
 
     formEl.addEventListener('submit', submitForm);
 });
+
+function adjustTableWidth() {
+    const table = document.getElementById('myTable');
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (width < 600) {
+        table.style.width = '80%';
+    } else if (width < 400) {
+        table.style.width = '60%';
+    } else {
+        table.style.width = '100%';
+    }
+}
+
+window.addEventListener('resize', adjustTableWidth);
+adjustTableWidth();

@@ -1,8 +1,8 @@
-const codes = require('../assests/json/codes.json')
+const codes = require('../assests/json/codes.json');
 
 const checkRoll = (req, res, next) => {
     const {roll} = req.body;
-    if (roll.length !== 10 || isNaN(roll.slice(6, 8)) || !Object.keys(codes).includes(roll.slice(6, 8))) {
+    if (roll.length !== 10 || isNaN(roll.slice(6, 8)) || !(roll.slice(6, 8) in codes)) {
         res.send('Invalid Roll Number');
     } else {
         next();
@@ -11,7 +11,7 @@ const checkRoll = (req, res, next) => {
 
 const checkFrom = (req, res, next) => {
     const {from} = req.body;
-    if (from.length !== 10 || isNaN(from.slice(6, 8)) || !Object.keys(codes).includes(from.slice(6, 8))) {
+    if (from.length !== 10 || isNaN(from.slice(6, 8)) || !(from.slice(6, 8) in codes)) {
         res.send('Invalid Roll Number');
     } else {
         next();
@@ -20,13 +20,12 @@ const checkFrom = (req, res, next) => {
 
 const checkTo = (req, res, next) => {
     const {to} = req.body;
-    if (to.length !== 10 || isNaN(to.slice(6, 8)) || !Object.keys(codes).includes(to.slice(6, 8))) {
+    if (to.length !== 10 || isNaN(to.slice(6, 8)) || !(to.slice(6, 8) in codes)) {
         res.send('Invalid Roll Number');
     } else {
         next();
     }
 };
-
 
 const checkSem = (req, res, next) => {
     let {sem, roll} = req.body;
@@ -39,7 +38,6 @@ const checkSem = (req, res, next) => {
         res.send('Invalid Semester');
     }
 };
-
 
 const checkSub = (req, res, next) => {
     let {sub, sem, roll} = req.body;
@@ -69,4 +67,4 @@ module.exports = {
     checkSem,
     checkSub,
     checkWeek
-}
+};
