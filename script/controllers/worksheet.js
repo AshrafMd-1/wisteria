@@ -23,9 +23,8 @@ router.post('/subject', checkRoll, checkSem, (req, res) => {
 router.get('/pdf/:filename', async (req, res) => {
     const {filename} = req.params;
     const [roll, sem, sub, week] = filename.split('_');
-    const semDigits = romanToDigits(sem.split(' ')[0]);
 
-    const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${semDigits}/${sub}/${roll}_week${week}.pdf`;
+    const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${sem}/${sub}/${roll}_week${week}.pdf`;
     const pdfFileName = `${new Date().getTime()}.pdf`;
 
     res.setHeader('Content-Type', 'application/pdf');

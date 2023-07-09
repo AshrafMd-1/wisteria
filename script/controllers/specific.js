@@ -20,7 +20,7 @@ router.post('/specific', checkRoll, checkSem, checkSub, checkWeek, async (req, r
         const response = await axios.head(fileUrl);
         res.json({
             status: response.status,
-            url: `/pdf/${roll}_${sem}_${sub}_${week}`,
+            url: `/pdf/${roll}_${semDigits}_${sub}_${week}`,
         });
     } catch (error) {
         console.error(error);

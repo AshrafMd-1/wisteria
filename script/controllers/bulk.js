@@ -24,7 +24,7 @@ router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (r
             status.push({
                 roll,
                 status: response ? 'Uploaded' : 'Not Uploaded',
-                url: response ? `/pdf/${roll}_${sem}_${sub}_${week}` : null,
+                url: response ? `/pdf/${roll}_${semDigits}_${sub}_${week}` : null,
             });
         }
 
