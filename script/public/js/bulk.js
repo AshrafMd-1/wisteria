@@ -10,14 +10,19 @@ $(document).ready(function () {
     const uploadEl = document.getElementById('upload');
     const percentEl = document.getElementById('percent');
 
-    fetch("https://api.ipify.org?format=json")
-        .then((response) => response.json())
-        .then((data) => {
-            const ip = `${data.ip}`;
-            localStorage.setItem("ip", ip);
-        });
+    const getIp = async () => {
+        localStorage.clear();
+        fetch("https://api.ipify.org?format=json")
+            .then((response) => response.json())
+            .then((data) => {
+                const ip = `${data.ip}`;
+                localStorage.setItem("ip", ip);
+            });
+    };
 
-    let ip = localStorage.getItem("ip");
+    window.addEventListener('load', () => {
+        getIp();
+    });
 
     const clearAll = () => {
         semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -93,24 +98,26 @@ $(document).ready(function () {
         const sem = form.get('sem');
         let sub = form.get('sub');
         const week = form.get('week');
-        console.log(ip);
+        let ip = localStorage.getItem("ip");
+
         if (from.length === 0 || to.length === 0) {
             showAlert('Please Enter Roll Number');
             return;
         } else if (from.slice(0, 8) !== to.slice(0, 8)) {
             showAlert('Roll Number should be of same batch');
             return;
-        } else if (!sem) {
+        } else if (!sem || sem === '0') {
             showAlert('Please Apply Roll Number');
             return;
-        } else if (!sub) {
+        } else if (!sub || sub === '0') {
             showAlert('Please Select Semester');
             return;
         } else if (week > 15 || week <= 0) {
             showAlert('Please Enter Week Number Between 1 to 15');
             return;
         } else if (ip === '' || !ip || ip.split('.').length !== 4) {
-            showAlert('IP Address Is Not Valid!');
+            getIp();
+            showAlert('IP Address Is Not Valid! Refresh The Page');
             return;
         }
 
@@ -161,9 +168,9 @@ $(document).ready(function () {
                 $('#myTable').DataTable({
                     data: specificResponse.data,
                     columns: [
-                        {data: "roll"},
-                        {data: "status"},
-                        {data: "url"},
+                        { data: "roll" },
+                        { data: "status" },
+                        { data: "url" },
                     ],
                     lengthChange: false,
                     pageLength: 10,

@@ -5,16 +5,19 @@ const subEl = document.getElementById('sub');
 const submitEl = document.getElementById('submit');
 const formEl = document.getElementById('form');
 
-fetch("https://api.ipify.org?format=json")
-    .then((response) => response.json())
-    .then((data) => {
-        const ip = `${data.ip}`;
-        localStorage.setItem("ip", ip);
-    });
+const getIp = async () => {
+    localStorage.clear();
+    fetch("https://api.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+            const ip = `${data.ip}`;
+            localStorage.setItem("ip", ip);
+        });
+};
 
-
-let ip = localStorage.getItem("ip");
-
+window.addEventListener('load', () => {
+    getIp();
+});
 
 const clearAll = () => {
     semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -22,15 +25,15 @@ const clearAll = () => {
 };
 
 const showAlert = (message) => {
-        swal({
-            title: 'Error',
-            text: message,
-            icon: 'error',
-            button: 'Ok',
-        });
-        clearAll();
-    }
-;
+    swal({
+        title: 'Error',
+        text: message,
+        icon: 'error',
+        button: 'Ok',
+    });
+    clearAll();
+}
+    ;
 
 const fetchOptions = async (url, method, body) => {
     try {
@@ -75,7 +78,7 @@ applyBtn.addEventListener('click', async () => {
     applyBtn.innerText = 'Loading...';
     applyBtn.disabled = true;
 
-    const semResponse = await fetchOptions('/semester', 'POST', {roll: rollEl.value});
+    const semResponse = await fetchOptions('/semester', 'POST', { roll: rollEl.value });
     if (semResponse) {
         updateSemesterOptions(semResponse);
     }
@@ -93,7 +96,7 @@ semEl.addEventListener('change', async () => {
         return;
     }
 
-    const subResponse = await fetchOptions('/subject', 'POST', {roll, sem});
+    const subResponse = await fetchOptions('/subject', 'POST', { roll, sem });
     if (subResponse) {
         updateSubjectOptions(subResponse);
     }
@@ -107,21 +110,23 @@ formEl.addEventListener('submit', async (e) => {
     const sem = form.get('sem');
     let sub = form.get('sub');
     const week = form.get('week');
-    console.log(ip);
+    let ip = localStorage.getItem("ip");
+
     if (roll.length === 0) {
         showAlert('Please Enter Roll Number');
         return;
-    } else if (sem === null) {
+    } else if (sem === null || sem === '0') {
         showAlert('Please Apply Roll Number');
         return;
-    } else if (sub === null) {
+    } else if (sub === null || sub === '0') {
         showAlert('Please Select Subject');
         return;
     } else if (week > 15 || week <= 0) {
         showAlert('Please Enter Week Number Between 1 to 15');
         return;
     } else if (ip === '' || !ip || ip.split('.').length !== 4) {
-        showAlert('IP Address Is Not Valid!');
+        getIp();
+        showAlert('IP Address Is Not Valid! Refresh The Page');
         return;
     }
 
@@ -131,7 +136,7 @@ formEl.addEventListener('submit', async (e) => {
     submitEl.innerText = 'Loading...';
     submitEl.disabled = true;
 
-    const specificResponse = await fetchOptions('/specific', 'POST', {roll, sem, sub, week, ip});
+    const specificResponse = await fetchOptions('/specific', 'POST', { roll, sem, sub, week, ip });
     if (specificResponse && specificResponse.status === 200) {
         swal({
             title: 'Success',
