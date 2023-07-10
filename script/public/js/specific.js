@@ -137,9 +137,26 @@ formEl.addEventListener('submit', async (e) => {
             title: 'Success',
             text: 'File Found',
             icon: 'success',
-            button: 'Open',
-        }).then(() => {
-            window.open(specificResponse.url, '_blank');
+            buttons: {
+                cancel: {
+                    text: 'Cancel',
+                    value: null,
+                    visible: true,
+                    className: 'swal-button--cancel',
+                    closeModal: true,
+                },
+                confirm: {
+                    text: 'Open',
+                    value: true,
+                    visible: true,
+                    className: 'swal-button--confirm',
+                    closeModal: false,
+                }
+            }
+        }).then((value) => {
+            if (value) {
+                window.open(specificResponse.url, '_blank');
+            }
         });
     } else {
         swal({

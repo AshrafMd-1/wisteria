@@ -128,7 +128,7 @@ footer {
     border-radius: 10px;
 }
 
-footer p{
+footer p {
     font-size: 30px;
     color: white;
     font-weight: 700;
@@ -226,4 +226,14 @@ span {
     text-align: center;
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
+}
+
+.swal-button--cancel {
+    background-color: red;
+    color: white;
+}
+
+.swal-button--confirm {
+    background-color: green;
+    color: white;
 }
