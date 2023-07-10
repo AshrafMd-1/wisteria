@@ -22,4 +22,4 @@ micros:
       env:
         - name: secret_link
           description: Link to access all the database details
-          default: 'Totally_not_a_secret_link'
+          default: 'totally_not_a_secret_link'

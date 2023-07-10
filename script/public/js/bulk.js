@@ -10,7 +10,14 @@ $(document).ready(function () {
     const uploadEl = document.getElementById('upload');
     const percentEl = document.getElementById('percent');
 
-    let ip = '';
+    fetch("https://api.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+            const ip = `${data.ip}`;
+            localStorage.setItem("ip", ip);
+        });
+
+    let ip = localStorage.getItem("ip");
 
     const clearAll = () => {
         semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -86,7 +93,7 @@ $(document).ready(function () {
         const sem = form.get('sem');
         let sub = form.get('sub');
         const week = form.get('week');
-
+        console.log(ip);
         if (from.length === 0 || to.length === 0) {
             showAlert('Please Enter Roll Number');
             return;
@@ -213,14 +220,4 @@ $(document).ready(function () {
 
     window.addEventListener('resize', adjustTableWidth);
     adjustTableWidth();
-
-    window.addEventListener('load', () => {
-        fetch("https://api.ipify.org?format=json")
-            .then((response) => response.json())
-            .then((data) => {
-                ip = `${data.ip}`;
-            });
-    })
-
-
 });

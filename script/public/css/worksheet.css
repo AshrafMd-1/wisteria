@@ -3,9 +3,7 @@
 body {
     margin: 0;
     font-family: 'Kalam', cursive;
-    background-color: #8EC5FC;
-    background: linear-gradient(var(--angle), var(--color1), var(--color2));
-    background-attachment: fixed;
+    background: linear-gradient(var(--angle), var(--color1), var(--color2)) fixed;
 }
 
 header {
@@ -126,9 +124,15 @@ button:disabled {
 footer {
     padding: 5px;
     width: 70%;
-    font-size: 20px;
     margin: 5px auto;
     border-radius: 10px;
+}
+
+footer p{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(0, 0, 0);
 }
 
 .btn {

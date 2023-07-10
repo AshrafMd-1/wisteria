@@ -5,7 +5,16 @@ const subEl = document.getElementById('sub');
 const submitEl = document.getElementById('submit');
 const formEl = document.getElementById('form');
 
-let ip = '';
+fetch("https://api.ipify.org?format=json")
+    .then((response) => response.json())
+    .then((data) => {
+        const ip = `${data.ip}`;
+        localStorage.setItem("ip", ip);
+    });
+
+
+let ip = localStorage.getItem("ip");
+
 
 const clearAll = () => {
     semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -98,7 +107,7 @@ formEl.addEventListener('submit', async (e) => {
     const sem = form.get('sem');
     let sub = form.get('sub');
     const week = form.get('week');
-
+    console.log(ip);
     if (roll.length === 0) {
         showAlert('Please Enter Roll Number');
         return;
@@ -144,11 +153,3 @@ formEl.addEventListener('submit', async (e) => {
     submitEl.innerText = 'Submit';
     submitEl.disabled = false;
 });
-
-window.addEventListener('load', () => {
-    fetch("https://api.ipify.org?format=json")
-        .then((response) => response.json())
-        .then((data) => {
-            ip = `${data.ip}`;
-        });
-})
