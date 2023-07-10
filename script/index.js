@@ -8,6 +8,8 @@ const app = express();
 const worksheetRoute = require('./controllers/worksheet');
 const specificRoute = require('./controllers/specific');
 const bulkRoute = require('./controllers/bulk');
+const statusRoute = require('./controllers/status');
+
 const port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
