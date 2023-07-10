@@ -5,6 +5,8 @@ const subEl = document.getElementById('sub');
 const submitEl = document.getElementById('submit');
 const formEl = document.getElementById('form');
 
+let ip = '';
+
 const clearAll = () => {
     semEl.innerHTML = '<option value="0">Not Available</option>';
     subEl.innerHTML = '<option value="0">Not Available</option>';
@@ -109,6 +111,9 @@ formEl.addEventListener('submit', async (e) => {
     } else if (week > 15 || week <= 0) {
         showAlert('Please Enter Week Number Between 1 to 15');
         return;
+    } else if (ip === '' || !ip || ip.split('.').length !== 4) {
+        showAlert('IP Address Is Not Valid!');
+        return;
     }
 
     roll = roll.toUpperCase();
@@ -117,7 +122,7 @@ formEl.addEventListener('submit', async (e) => {
     submitEl.innerText = 'Loading...';
     submitEl.disabled = true;
 
-    const specificResponse = await fetchOptions('/specific', 'POST', {roll, sem, sub, week});
+    const specificResponse = await fetchOptions('/specific', 'POST', {roll, sem, sub, week, ip});
     if (specificResponse && specificResponse.status === 200) {
         swal({
             title: 'Success',
@@ -139,3 +144,11 @@ formEl.addEventListener('submit', async (e) => {
     submitEl.innerText = 'Submit';
     submitEl.disabled = false;
 });
+
+window.addEventListener('load', () => {
+    fetch("https://api.ipify.org?format=json")
+        .then((response) => response.json())
+        .then((data) => {
+            ip = `${data.ip}`;
+        });
+})

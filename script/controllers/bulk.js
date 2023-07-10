@@ -3,7 +3,7 @@ const moment = require('moment');
 const router = express.Router();
 const { romanToDigits, rollChecker } = require('./utility');
 const axios = require('axios');
-const { checkFrom, checkTo, checkSem, checkSub, checkWeek } = require('./middleware');
+const { checkIP,checkFrom, checkTo, checkSem, checkSub, checkWeek } = require('./middleware');
 const { bulkSearch } = require('./deta');
 
 router.get('/bulk', (req, res) => {
@@ -12,9 +12,9 @@ router.get('/bulk', (req, res) => {
     });
 });
 
-router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (req, res) => {
+router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek,checkIP, async (req, res) => {
     try {
-        const { from, to, sem, sub, week } = req.body;
+        const { from, to, sem, sub, week,ip } = req.body;
         const semDigits = romanToDigits(sem.split(' ')[0]);
         const rolls = rollChecker(from, to);
         const status = [];
@@ -39,11 +39,12 @@ router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (r
             week,
             rolls: rolls.length,
             uploads: filteredStatus.filter((item) => item.status === 'Uploaded').length,
+            ip:ip,
             platform: req.headers['sec-ch-ua-platform'],
             browser: req.headers['user-agent'],
             date: new Date().toISOString().slice(0, 19).split('T')[0],
             time: new Date().toISOString().slice(0, 19).split('T')[1],
-        });
+        },`${new Date().getTime()}`);
 
         res.header('Content-Type', 'application/json');
         res.json({

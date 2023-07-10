@@ -59,6 +59,14 @@ const checkWeek = (req, res, next) => {
         res.send('Invalid Week');
     }
 };
+const checkIP = (req, res, next) => {
+    const {ip} = req.body;
+    if (ip===''||!ip||ip.split('.').length!==4) {
+        res.send('Invalid IP Address!');
+    } else {
+        next();
+    }
+};
 
 module.exports = {
     checkRoll,
@@ -66,5 +74,6 @@ module.exports = {
     checkTo,
     checkSem,
     checkSub,
-    checkWeek
+    checkWeek,
+    checkIP,
 };

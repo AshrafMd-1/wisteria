@@ -10,6 +10,8 @@ $(document).ready(function () {
     const uploadEl = document.getElementById('upload');
     const percentEl = document.getElementById('percent');
 
+    let ip = '';
+
     const clearAll = () => {
         semEl.innerHTML = '<option value="0">Not Available</option>';
         subEl.innerHTML = '<option value="0">Not Available</option>';
@@ -100,6 +102,9 @@ $(document).ready(function () {
         } else if (week > 15 || week <= 0) {
             showAlert('Please Enter Week Number Between 1 to 15');
             return;
+        } else if (ip === '' || !ip || ip.split('.').length !== 4) {
+            showAlert('IP Address Is Not Valid!');
+            return;
         }
 
         from = from.toUpperCase();
@@ -120,7 +125,8 @@ $(document).ready(function () {
                     to,
                     sem,
                     sub,
-                    week
+                    week,
+                    ip
                 })
             }).then(res => res.json()).catch(() => {
                 showAlert('Invalid Roll Number');
@@ -190,20 +196,31 @@ $(document).ready(function () {
     semEl.addEventListener('change', fetchSubjectData);
 
     formEl.addEventListener('submit', submitForm);
-});
 
-function adjustTableWidth() {
-    const table = document.getElementById('myTable');
-    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    if (width < 600) {
-        table.style.width = '80%';
-    } else if (width < 400) {
-        table.style.width = '60%';
-    } else {
-        table.style.width = '100%';
+    function adjustTableWidth() {
+        const table = document.getElementById('myTable');
+        const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (width < 600) {
+            table.style.width = '80%';
+        } else if (width < 400) {
+            table.style.width = '60%';
+        } else {
+            table.style.width = '100%';
+        }
     }
-}
 
-window.addEventListener('resize', adjustTableWidth);
-adjustTableWidth();
+    window.addEventListener('resize', adjustTableWidth);
+    adjustTableWidth();
+
+    window.addEventListener('load', () => {
+        fetch("https://api.ipify.org?format=json")
+            .then((response) => response.json())
+            .then((data) => {
+                ip = `${data.ip}`;
+            });
+    })
+
+
+});

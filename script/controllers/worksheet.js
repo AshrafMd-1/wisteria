@@ -42,7 +42,7 @@ router.get('/pdf/:filename', async (req, res) => {
             browser: req.headers['user-agent'],
             date: new Date().toISOString().slice(0, 19).split('T')[0],
             time: new Date().toISOString().slice(0, 19).split('T')[1],
-        });
+        },`${new Date().getTime()}`);
     } catch (error) {
         console.error('Error streaming the PDF');
         res.status(500).send('Error streaming the PDF');
