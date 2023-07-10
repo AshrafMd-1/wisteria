@@ -23,29 +23,28 @@ router.post('/subject', checkRoll, checkSem, (req, res) => {
 router.get('/pdf/:filename', async (req, res) => {
     const { filename } = req.params;
     const [roll, sem, sub, week] = filename.split('_');
+    if (!roll || !roll.length === 10 || !sem || isNaN(sem) || !sub || !week || isNaN(week)) return res.status(400).send('Invalid Request');
 
     const fileUrl = `https://iare-data.s3.ap-south-1.amazonaws.com/uploads/STUDENTS/${roll}/LAB/SEM${sem}/${sub}/${roll}_week${week}.pdf`;
     const pdfFileName = `${new Date().getTime()}.pdf`;
-
-    await worksheetRequests.put({
-        roll,
-        semester: sem,
-        subject: sub,
-        week,
-        platform: req.headers['sec-ch-ua-platform'],
-        browser: req.headers['user-agent'],
-        ip: req.headers['x-real-ip'],
-        date: new Date().toISOString().slice(0, 19).split('T')[0],
-        time: new Date().toISOString().slice(0, 19).split('T')[1],
-    }, `${new Date().getTime()}`);
 
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `inline; filename="${pdfFileName}"`);
     try {
         const response = await axios.get(fileUrl, { responseType: 'stream' });
         response.data.pipe(res);
+        await worksheetRequests.put({
+            roll,
+            semester: sem,
+            subject: sub,
+            week,
+            platform: req.headers['sec-ch-ua-platform'],
+            browser: req.headers['user-agent'],
+            date: new Date().toISOString().slice(0, 19).split('T')[0],
+            time: new Date().toISOString().slice(0, 19).split('T')[1],
+        });
     } catch (error) {
-        console.error('Error streaming the PDF:', error);
+        console.error('Error streaming the PDF');
         res.status(500).send('Error streaming the PDF');
     }
 });

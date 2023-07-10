@@ -1,9 +1,10 @@
 const express = require('express');
 const moment = require('moment');
 const router = express.Router();
-const {romanToDigits, rollChecker} = require('./utility');
+const { romanToDigits, rollChecker } = require('./utility');
 const axios = require('axios');
-const {checkFrom, checkTo, checkSem, checkSub, checkWeek} = require('./middleware');
+const { checkFrom, checkTo, checkSem, checkSub, checkWeek } = require('./middleware');
+const { bulkSearch } = require('./deta');
 
 router.get('/bulk', (req, res) => {
     res.render('bulk', {
@@ -13,7 +14,7 @@ router.get('/bulk', (req, res) => {
 
 router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (req, res) => {
     try {
-        const {from, to, sem, sub, week} = req.body;
+        const { from, to, sem, sub, week } = req.body;
         const semDigits = romanToDigits(sem.split(' ')[0]);
         const rolls = rollChecker(from, to);
         const status = [];
@@ -29,6 +30,21 @@ router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (r
         }
 
         const filteredStatus = status.filter((item) => item !== null);
+
+        await bulkSearch.put({
+            from,
+            to,
+            semester: semDigits,
+            subject: sub,
+            week,
+            rolls: rolls.length,
+            uploads: filteredStatus.filter((item) => item.status === 'Uploaded').length,
+            platform: req.headers['sec-ch-ua-platform'],
+            browser: req.headers['user-agent'],
+            date: new Date().toISOString().slice(0, 19).split('T')[0],
+            time: new Date().toISOString().slice(0, 19).split('T')[1],
+        });
+
         res.header('Content-Type', 'application/json');
         res.json({
             status: 200,
@@ -36,7 +52,7 @@ router.post('/bulk', checkFrom, checkTo, checkSem, checkSub, checkWeek, async (r
         });
     } catch (error) {
         console.error(error);
-        res.json({status: error.response ? error.response.status : 500});
+        res.json({ status: error.response ? error.response.status : 500 });
     }
 });
 
