@@ -12,7 +12,7 @@ router.get(`/data/specific/${process.env.secret_link}`, async (req, res) => {
 });
 
 router.get(`/data/bulk/${process.env.secret_link}`, async (req, res) => {
-  const bulkData = (await bulkSearch.fetch()).items
+    const bulkData = (await bulkSearch.fetch()).items
 
     res.json({
         "db name": "bulkSearch",

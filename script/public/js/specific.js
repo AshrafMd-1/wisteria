@@ -25,15 +25,15 @@ const clearAll = () => {
 };
 
 const showAlert = (message) => {
-    swal({
-        title: 'Error',
-        text: message,
-        icon: 'error',
-        button: 'Ok',
-    });
-    clearAll();
-}
-    ;
+        swal({
+            title: 'Error',
+            text: message,
+            icon: 'error',
+            button: 'Ok',
+        });
+        clearAll();
+    }
+;
 
 const fetchOptions = async (url, method, body) => {
     try {
@@ -78,7 +78,7 @@ applyBtn.addEventListener('click', async () => {
     applyBtn.innerText = 'Loading...';
     applyBtn.disabled = true;
 
-    const semResponse = await fetchOptions('/semester', 'POST', { roll: rollEl.value });
+    const semResponse = await fetchOptions('/semester', 'POST', {roll: rollEl.value});
     if (semResponse) {
         updateSemesterOptions(semResponse);
     }
@@ -96,7 +96,7 @@ semEl.addEventListener('change', async () => {
         return;
     }
 
-    const subResponse = await fetchOptions('/subject', 'POST', { roll, sem });
+    const subResponse = await fetchOptions('/subject', 'POST', {roll, sem});
     if (subResponse) {
         updateSubjectOptions(subResponse);
     }
@@ -142,7 +142,7 @@ formEl.addEventListener('submit', async (e) => {
     submitEl.innerText = 'Loading...';
     submitEl.disabled = true;
 
-    const specificResponse = await fetchOptions('/specific', 'POST', { roll, sem, sub, week, ip });
+    const specificResponse = await fetchOptions('/specific', 'POST', {roll, sem, sub, week, ip});
     if (specificResponse && specificResponse.status === 200) {
         swal({
             title: 'Success',

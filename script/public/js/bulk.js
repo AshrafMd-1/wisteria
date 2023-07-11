@@ -175,9 +175,9 @@ $(document).ready(function () {
                 $('#myTable').DataTable({
                     data: specificResponse.data,
                     columns: [
-                        { data: "roll" },
-                        { data: "status" },
-                        { data: "url" },
+                        {data: "roll"},
+                        {data: "status"},
+                        {data: "url"},
                     ],
                     lengthChange: false,
                     pageLength: 10,

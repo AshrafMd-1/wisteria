@@ -1,4 +1,4 @@
-const { Deta } = require('deta'); // import Deta
+const {Deta} = require('deta'); // import Deta
 
 // Initialize
 const deta = Deta();

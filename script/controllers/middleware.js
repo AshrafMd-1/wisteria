@@ -53,7 +53,7 @@ const checkSub = (req, res, next) => {
 
 const checkWeek = (req, res, next) => {
     const {week} = req.body;
-    if (week > 0 && week < 15) {
+    if (Number(week) > 0 && Number(week) <= 14) {
         next();
     } else {
         res.send('Invalid Week');
@@ -61,7 +61,7 @@ const checkWeek = (req, res, next) => {
 };
 const checkIP = (req, res, next) => {
     const {ip} = req.body;
-    if (ip===''||!ip||ip.split('.').length!==4) {
+    if (ip === '' || !ip || ip.split('.').length !== 4) {
         res.send('Invalid IP Address!');
     } else {
         next();
