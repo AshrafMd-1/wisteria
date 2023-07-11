@@ -53,7 +53,7 @@ $(document).ready(function () {
                 showAlert('Invalid Roll Number');
             });
 
-            semEl.innerHTML = `<option value="0">Select Semester</option>` + semResponse.map(sem => `<option value="${sem}">${sem}</option>`).join('');
+            semEl.innerHTML = `<option value="1">Select Semester</option>` + semResponse.map(sem => `<option value="${sem}">${sem}</option>`).join('');
         } catch (error) {
             console.log(error);
         }
@@ -83,7 +83,7 @@ $(document).ready(function () {
             });
 
             const options = subResponse.code.map((code, index) => `<option value="${code}">${subResponse.name[index]}</option>`).join('');
-            subEl.innerHTML = `<option value="0">Select Subject</option>${options}`;
+            subEl.innerHTML = `<option value="1">Select Subject</option>${options}`;
         } catch (error) {
             console.log(error);
         }
@@ -106,11 +106,18 @@ $(document).ready(function () {
         } else if (from.slice(0, 8) !== to.slice(0, 8)) {
             showAlert('Roll Number should be of same batch');
             return;
+
         } else if (!sem || sem === '0') {
             showAlert('Please Apply Roll Number');
             return;
+        } else if (sem === '1') {
+            showAlert('Please Select Semester');
+            return;
         } else if (!sub || sub === '0') {
             showAlert('Please Select Semester');
+            return;
+        } else if (sub === '1') {
+            showAlert('Please Select Subject');
             return;
         } else if (week > 15 || week <= 0) {
             showAlert('Please Enter Week Number Between 1 to 15');

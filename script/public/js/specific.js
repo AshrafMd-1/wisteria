@@ -54,7 +54,7 @@ const fetchOptions = async (url, method, body) => {
 };
 
 const updateSemesterOptions = (semData) => {
-    semEl.innerHTML = `<option value="0">Select Semester</option>${semData
+    semEl.innerHTML = `<option value="1">Select Semester</option>${semData
         .map((sem) => `<option value="${sem}">${sem}</option>`)
         .join('')}`;
 };
@@ -64,7 +64,7 @@ const updateSubjectOptions = (subData) => {
     for (let i = 0; i < subData.code.length; i++) {
         subElString += `<option value="${subData.code[i]}">${subData.name[i]}</option>`;
     }
-    subEl.innerHTML = `<option value="0">Select Subject</option>${subElString}`;
+    subEl.innerHTML = `<option value="1">Select Subject</option>${subElString}`;
 };
 
 applyBtn.addEventListener('click', async () => {
@@ -118,7 +118,13 @@ formEl.addEventListener('submit', async (e) => {
     } else if (sem === null || sem === '0') {
         showAlert('Please Apply Roll Number');
         return;
+    } else if (sem === '1') {
+        showAlert('Please Select Semester');
+        return;
     } else if (sub === null || sub === '0') {
+        showAlert('Please Select Subject');
+        return;
+    } else if (sub === '1') {
         showAlert('Please Select Subject');
         return;
     } else if (week > 15 || week <= 0) {
