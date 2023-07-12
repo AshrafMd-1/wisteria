@@ -6,7 +6,6 @@ const submitEl = document.getElementById('submit');
 const formEl = document.getElementById('form');
 
 const getIp = async () => {
-    localStorage.clear();
     fetch("https://api.ipify.org?format=json")
         .then((response) => response.json())
         .then((data) => {
@@ -14,10 +13,6 @@ const getIp = async () => {
             localStorage.setItem("ip", ip);
         });
 };
-
-window.addEventListener('load', () => {
-    getIp();
-});
 
 const clearAll = () => {
     semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -77,11 +72,12 @@ applyBtn.addEventListener('click', async () => {
 
     applyBtn.innerText = 'Loading...';
     applyBtn.disabled = true;
-
+    await getIp();
     const semResponse = await fetchOptions('/semester', 'POST', {roll: rollEl.value});
     if (semResponse) {
         updateSemesterOptions(semResponse);
     }
+
 
     applyBtn.innerText = 'Apply';
     applyBtn.disabled = false;
@@ -131,7 +127,7 @@ formEl.addEventListener('submit', async (e) => {
         showAlert('Please Enter Week Number Between 1 to 15');
         return;
     } else if (ip === '' || !ip || ip.split('.').length !== 4) {
-        getIp();
+        await getIp();
         showAlert('IP Address Is Not Valid! Refresh The Page');
         return;
     }

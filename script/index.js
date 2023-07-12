@@ -32,5 +32,5 @@ app.use('/', statusRoute);
 
 //Start Server
 app.listen(port, () => {
-    if(port===8080) console.log(`App listening on port ${port}!`);
+    if (port === 8080) console.log(`App listening on port ${port}!`);
 });

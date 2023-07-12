@@ -11,7 +11,6 @@ $(document).ready(function () {
     const percentEl = document.getElementById('percent');
 
     const getIp = async () => {
-        localStorage.clear();
         fetch("https://api.ipify.org?format=json")
             .then((response) => response.json())
             .then((data) => {
@@ -19,10 +18,6 @@ $(document).ready(function () {
                 localStorage.setItem("ip", ip);
             });
     };
-
-    window.addEventListener('load', () => {
-        getIp();
-    });
 
     const clearAll = () => {
         semEl.innerHTML = '<option value="0">Not Available</option>';
@@ -41,6 +36,7 @@ $(document).ready(function () {
 
     const fetchSemesterData = async () => {
         try {
+            await getIp();
             const semResponse = await fetch('/semester', {
                 method: 'POST',
                 headers: {
@@ -54,6 +50,7 @@ $(document).ready(function () {
             });
 
             semEl.innerHTML = `<option value="1">Select Semester</option>` + semResponse.map(sem => `<option value="${sem}">${sem}</option>`).join('');
+
         } catch (error) {
             console.log(error);
         }
@@ -123,7 +120,7 @@ $(document).ready(function () {
             showAlert('Please Enter Week Number Between 1 to 15');
             return;
         } else if (ip === '' || !ip || ip.split('.').length !== 4) {
-            getIp();
+            await getIp();
             showAlert('IP Address Is Not Valid! Refresh The Page');
             return;
         }
