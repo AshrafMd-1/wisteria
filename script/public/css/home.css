@@ -78,7 +78,7 @@ main p {
 .options {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -95,12 +95,16 @@ main p {
     color: #f6f6f6;
 }
 
-.util-btn a {
+.option {
+    margin: 20px 0;
+}
+
+.option a {
     display: inline-block;
-    margin-top: 20px;
     text-decoration: none;
     background-color: white;
     color: black;
+
     font-size: 20px;
     font-weight: 900;
     padding: 10px 20px;
@@ -109,11 +113,12 @@ main p {
     transition: all 0.3s ease-in-out;
 }
 
-.util-btn a:hover {
+.option a:hover {
     background-color: #4c4c4c;
     color: white;
     font-size: 24px;
 }
+
 
 footer {
     background-color: white;
