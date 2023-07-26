@@ -58,7 +58,7 @@ router.get("/pdf/:filename", async (req, res) => {
       `${new Date().getTime()}`
     );
   } catch (error) {
-    console.error("Error streaming the PDF or PDF not found");
+    // console.error("Error streaming the PDF or PDF not found");
     res.setHeader("Content-Type", "application/json");
     await worksheetRequests.put(
       {
