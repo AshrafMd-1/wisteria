@@ -59,9 +59,7 @@
         "ACSC15": "Design and Analysis of Algorithms Laboratory",
         "ACSC16": "Linux Programming Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "AHSC14": "Indian Constitution"
-      }
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
     },
     "V Semester": {
       "Theory": {
@@ -90,9 +88,7 @@
         "ACIC08": "Data Mining and Knowledge Discovery Laboratory",
         "ACIC09": "Software Testing Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC28": "Go Programming"
-      }
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
     },
     "VII Semester": {
       "Theory": {
@@ -107,9 +103,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "ACSC39": "Project Work (Phase-2)"
-      }
+      "Practical": { "ACSC39": "Project Work (Phase-2)" }
     }
   },
   "66": {
@@ -172,9 +166,7 @@
         "AITC10": "Web Application Development Laboratory",
         "ACAC04": "Foundations of Machine Learning Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "AHSC14": "Indian Constitution"
-      }
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
     },
     "V Semester": {
       "Theory": {
@@ -203,9 +195,7 @@
         "ACAC14": "Object Oriented Analysis and Design Laboratory",
         "ACAC15": "Natural Language Processing Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC28": "Go Programming"
-      }
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
     },
     "VII Semester": {
       "Theory": {
@@ -220,9 +210,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "ACAC32": "Project Work (Phase-2)"
-      }
+      "Practical": { "ACAC32": "Project Work (Phase-2)" }
     }
   },
   "67": {
@@ -285,9 +273,7 @@
         "AITC10": "Web Application Development Laboratory",
         "ACSC16": "Linux Programming Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "AHSC14": "Indian Constitution"
-      }
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
     },
     "V Semester": {
       "Theory": {
@@ -316,9 +302,7 @@
         "ACAC04": "Foundations of Machine Learning Laboratory",
         "ACAC15": "Natural Language Processing Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC28": "Go Programming"
-      }
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
     },
     "VII Semester": {
       "Theory": {
@@ -333,9 +317,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "ACDC23": "Project Work (Phase-2)"
-      }
+      "Practical": { "ACDC23": "Project Work (Phase-2)" }
     }
   },
   "62": {
@@ -398,9 +380,7 @@
         "ACSC15": "Design and Analysis of Algorithms Laboratory",
         "AITC12": "Computer Networks Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "AHSC14": "Indian Constitution"
-      }
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
     },
     "V Semester": {
       "Theory": {
@@ -429,15 +409,10 @@
         "ACCC10": "Penetration Testing and Cyber Operations Laboratory",
         "ACIC08": "Data Mining and Knowledge Discovery Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC28": "Go Programming"
-      }
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
     },
     "VII Semester": {
-      "Theory": {
-        "ACCC11": "Digital Forensics",
-        "ACCC12": "Cloud Security"
-      },
+      "Theory": { "ACCC11": "Digital Forensics", "ACCC12": "Cloud Security" },
       "Practical": {
         "ACCC17": "Digital Forensics Laboratory",
         "ACCC18": "Cloud Security Laboratory",
@@ -446,9 +421,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "ACSC24": "Project Work (Phase-2)"
-      }
+      "Practical": { "ACSC24": "Project Work (Phase-2)" }
     }
   },
   "12": {
@@ -511,9 +484,7 @@
         "ACSC15": "Design and Analysis of Algorithms Laboratory",
         "AITC08": "Linux Internals Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "AHSC14": "Indian Constitution"
-      }
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
     },
     "V Semester": {
       "Theory": {
@@ -542,9 +513,7 @@
         "AITC22": "Data Warehousing and Data Mining Laboratory",
         "AITC23": "Software Testing Methodologies Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC28": "Go Programming"
-      }
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
     },
     "VII Semester": {
       "Theory": {
@@ -559,9 +528,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "AITC32": "Project Work (Phase \u2013 II)"
-      }
+      "Practical": { "AITC32": "Project Work (Phase \u2013 II)" }
     }
   },
   "21": {
@@ -655,9 +622,7 @@
         "AAEC32": "Computational Aerodynamics Laboratory",
         "AAEC33": "Computer Aided Manufacturing (CAM) Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC29": "Design of Algorithms"
-      }
+      "Mandatory / Value Added Courses": { "ACSC29": "Design of Algorithms" }
     },
     "VII Semester": {
       "Theory": {
@@ -672,9 +637,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "AAEC55": "Project Work (Phase - II)"
-      }
+      "Practical": { "AAEC55": "Project Work (Phase - II)" }
     }
   },
   "04": {
@@ -768,15 +731,10 @@
         "AECC41": "Antennas and Microwave Engineering Laboratory",
         "AECC42": "Digital Signal Processing Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC29": "Design of Algorithms"
-      }
+      "Mandatory / Value Added Courses": { "ACSC29": "Design of Algorithms" }
     },
     "VII Semester": {
-      "Theory": {
-        "AECC43": "Embedded System Design",
-        "AECC44": "VLSI Design"
-      },
+      "Theory": { "AECC43": "Embedded System Design", "AECC44": "VLSI Design" },
       "Practical": {
         "AECC53": "Embedded System Design Laboratory",
         "AECC54": "VLSI Design Laboratory",
@@ -785,9 +743,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "AECC64": "Project Work (Phase - II)"
-      }
+      "Practical": { "AECC64": "Project Work (Phase - II)" }
     }
   },
   "02": {
@@ -881,9 +837,7 @@
         "AEEC32": "PLC and Industrial Automation Laboratory",
         "AEEC33": "Electrical Measurements and Instrumentation Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC29": "Design of Algorithms"
-      }
+      "Mandatory / Value Added Courses": { "ACSC29": "Design of Algorithms" }
     },
     "VII Semester": {
       "Theory": {
@@ -898,9 +852,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "AEEC55": "Project Work (Phase - II)"
-      }
+      "Practical": { "AEEC55": "Project Work (Phase - II)" }
     }
   },
   "03": {
@@ -994,9 +946,7 @@
         "AMEC36": "Heat Transfer Laboratory",
         "AMEC37": "Thermo-Fluid Modeling and Simulation Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC29": "Design of Algorithms"
-      }
+      "Mandatory / Value Added Courses": { "ACSC29": "Design of Algorithms" }
     },
     "VII Semester": {
       "Theory": {
@@ -1011,9 +961,7 @@
     },
     "VIII Semester": {
       "Theory": {},
-      "Practical": {
-        "AMEC59": "Project Work (Phase \u2013 II)"
-      }
+      "Practical": { "AMEC59": "Project Work (Phase \u2013 II)" }
     }
   },
   "01": {
@@ -1107,9 +1055,7 @@
         "ACEC32": "Geotechnical Engineering Laboratory",
         "ACEC33": "Transportation Engineering Laboratory"
       },
-      "Mandatory / Value Added Courses": {
-        "ACSC29": "Design of Algorithms"
-      }
+      "Mandatory / Value Added Courses": { "ACSC29": "Design of Algorithms" }
     },
     "VII Semester": {
       "Theory": {
@@ -1124,9 +1070,114 @@
     },
     "VIII Semester": {
       "Theory": {},
+      "Practical": { "ACEC55": "Project Work(Phase \u2013 II)" }
+    }
+  },
+  "33": {
+    "I Semester": {
+      "Theory": {
+        "AHSC02": "Linear Algebra and Calculus",
+        "AHSC06": "Chemistry",
+        "AEEC01": "Basic Electrical Engineering",
+        "ACSC01": "Python Programming",
+        "ACSC06": "Experiential Engineering Education (ExEEd) \u2013 Academic Success"
+      },
       "Practical": {
-        "ACEC55": "Project Work(Phase \u2013 II)"
+        "AEEC04": "Basic Electrical Engineering Laboratory",
+        "ACSC02": "Python Programming Laboratory",
+        "AMEC04": "Engineering Workshop Practice"
       }
+    },
+    "II Semester": {
+      "Theory": {
+        "AHSC01": "English",
+        "AHSC08": "Probability and Statistics",
+        "AHSC09": "Applied Physics",
+        "ACSC04": "Programming for Problem Solving using C"
+      },
+      "Practical": {
+        "AHSC04": "English Language and Communication Skills Laboratory",
+        "AHSC05": "Physics Laboratory",
+        "ACSC05": "Programming for Problem Solving using C Laboratory"
+      }
+    },
+    "III Semester": {
+      "Theory": {
+        "AITC01": "Discrete Mathematical Structures",
+        "ACSC07": "Computer Organization and Architecture",
+        "ACSC08": "Data Structures",
+        "AITC02": "Programming with Objects",
+        "AECC08": "Analog and Digital Electronics",
+        "ACSC09": "Experiential Engineering Education (ExEEd) - Prototype / Design Building"
+      },
+      "Practical": {
+        "ACSC10": "Data Structures Laboratory",
+        "AITC03": "Programming with Objects Laboratory",
+        "ACSC11": "Advanced Python Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "AHSC10": "Essence of Indian Traditional Knowledge"
+      }
+    },
+    "IV Semester": {
+      "Theory": {
+        "AITC04": "Theory of Computation",
+        "ACSC12": "Operating Systems",
+        "AITC05": "Database Management Systems",
+        "ACSC13": "Design and Analysis of Algorithms",
+        "AHSC13": "Business Economics and Financial Analysis",
+        "ACSC14": "Experiential Engineering Education (ExEEd) - Fabrication / Model Development"
+      },
+      "Practical": {
+        "AITC07": "Database Management Systems Laboratory",
+        "ACSC15": "Design and Analysis of Algorithms Laboratory",
+        "ACSC16": "Linux Programming Laboratory"
+      },
+      "Mandatory / Value Added Courses": { "AHSC14": "Indian Constitution" }
+    },
+    "V Semester": {
+      "Theory": {
+        "AITC06": "Computer Networks",
+        "ACSC40": "Compiler Design",
+        "ACSC19": "Object Oriented Software Engineering",
+        "AITC09": "Web Application Development",
+        "ACSC20": "Experiential Engineering Education (ExEEd) - Project Based Learning"
+      },
+      "Practical": {
+        "ACSC21": "Object Oriented Software Design Laboratory",
+        "AITC10": "Web Application Development Laboratory"
+      },
+      "Mandatory / Value Added Courses": {
+        "ACSC22": "Competitive Programming using Graph Algorithms"
+      }
+    },
+    "VI Semester": {
+      "Theory": {
+        "ACIC01": "Data Mining and Knowledge Discovery",
+        "ACIC02": "Software Quality Assurance and Testing",
+        "ACIC03": "Network and Web based Security",
+        "ACSC27": "Experiential Engineering Education (ExEEd) - Research Based Learning"
+      },
+      "Practical": {
+        "ACIC08": "Data Mining and Knowledge Discovery Laboratory",
+        "ACIC09": "Software Testing Laboratory"
+      },
+      "Mandatory / Value Added Courses": { "ACSC28": "Go Programming" }
+    },
+    "VII Semester": {
+      "Theory": {
+        "ACSC30": "Cloud Application Development",
+        "ACSC31": "Big Data and Analytics"
+      },
+      "Practical": {
+        "ACSC33": "Cloud Application Development Laboratory",
+        "ACSC34": "Big Data and Analytics Laboratory",
+        "ACIC13": "Project Work (Phase \u2013 1)"
+      }
+    },
+    "VIII Semester": {
+      "Theory": {},
+      "Practical": { "ACIC18": "Project Work (Phase-2)" }
     }
   }
 }
